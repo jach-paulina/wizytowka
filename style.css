@@ -1,0 +1,844 @@
+/*
+font-family: 'Saira Condensed',
+sans-serif;
+
+font-family: 'Saira',
+sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-color: #49DBDA;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header img {
+    position: absolute;
+    height: 30%;
+    bottom: 0;
+    right: 0;
+
+}
+
+header .welcome {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    right: 5%;
+    z-index: 1;
+
+
+
+}
+
+header p {
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+header h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+}
+
+header h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header button {
+
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+    line-height: 32px;
+    padding: 0 20px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid white;
+    display: block;
+    margin: 20px auto;
+
+}
+
+@media(orientation: landscape) {
+    header img {
+        position: absolute;
+        height: 70%;
+        bottom: 0;
+        right: 5%;
+    }
+
+
+
+    header .welcome {
+        top: 15%;
+        left: 5%;
+        right: 50%;
+
+    }
+
+
+}
+
+@media(orientation: portrait) {
+    header img {
+        position: absolute;
+        height: 50%;
+        bottom: 0;
+        right: 5%;
+    }
+
+
+
+    header .welcome {
+        top: 5%;
+        left: 15%;
+        right: 20%;
+
+    }
+
+    section {
+        min-height: 100vh;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+
+    header img {
+        position: absolute;
+        height: 50%;
+        bottom: 0;
+        right: 25%;
+    }
+
+    header .welcome {
+        top: 25%;
+        left: 5%;
+        right: 50%;
+
+    }
+
+    header p {
+        text-align: center;
+        font-family: 'Saira Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        color: white;
+        text-transform: uppercase;
+
+    }
+
+    header h1 {
+        font-family: 'Saira Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 46px;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px;
+        letter-spacing: 1.5px;
+    }
+
+    header h2 {
+        font-family: 'Saira Condensed', sans-serif;
+        font-weight: normal;
+        font-size: 40px;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    header button {
+
+        font-family: 'Saira', sans-serif;
+        font-weight: 4400;
+        line-height: 52px;
+        padding: 0 40px;
+        font-size: 22px;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: transparent;
+        border: 2px solid white;
+        display: block;
+        margin: 30px auto;
+
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    header button {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    header button:hover {
+        background-color: #fff;
+        color: #111;
+
+    }
+}
+
+
+
+/*Sekcja pierwsza*/
+
+.features {
+    padding: 5%;
+    text-align: center;
+    max-width: 1600px;
+    margin: 50px auto 0;
+}
+
+.features h1 {
+    font-family: 'Saira Condensed',
+        sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.features img {
+    width: 100%;
+    margin: 5px 0;
+    max-width: 375px;
+}
+
+.features h2 {
+    font-family: 'Saira Condensed',
+        sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.features p {
+    font-family: 'Saira',
+        sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 20px 0;
+
+}
+
+.gal {
+    font-size: 15px
+}
+
+
+@media (min-width: 360px) {
+    .features p {
+        font-size: 15px;
+    }
+
+    .features h1 {
+        font-size: 28px;
+    }
+
+
+    .features h2 {
+        font-size: 24px;
+    }
+
+    .gal {
+        font-size: 12px
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 20px;
+
+    }
+
+    .features p {
+        font-size: 15px;
+        line-height: 110%;
+    }
+
+    .features h1 {
+        font-size: 28px;
+    }
+
+
+    .features h2 {
+        font-size: 24px;
+    }
+
+    .gal {
+        font-size: 13spx
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 20px 40px;
+
+    }
+
+    .features p {
+        font-size: 25px;
+        line-height: 140%;
+    }
+
+    .features h1 {
+        font-size: 60px;
+    }
+
+
+    .features h2 {
+        font-size: 36px;
+    }
+
+    .gal {
+        font-size: 14px
+    }
+}
+
+
+/*Portfolio*/
+.portfolio {
+    background-color: black;
+    padding: 10px 0 30px;
+}
+
+.portfolio h1 {
+    font-family: 'Saira Condensed',
+        sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.portfolio .web img {
+    width: 100%;
+}
+
+.portfolio .about {
+    color: white;
+    font-family: 'Saira', sans-serif;
+    font-weight: normal;
+    padding: 10px 20px 20px 0;
+    text-align: justify;
+}
+
+.portfolio .about h2 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    margin-bottom: 12px;
+    padding: 6px;
+    text-indent: 20px;
+
+}
+
+.portfolio .about p {
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.portfolio .project {
+    max-width: 1400px;
+    margin: 0 auto 20px;
+
+}
+
+.portfolio .project:nth-of-type(odd) {
+    background-color: #008F88;
+}
+
+.portfolio .project:nth-of-type(even) {
+    background-color: #DB5A16;
+}
+
+@media(min-width: 768px) {
+
+    .portfolio h1 {
+        font-size: 40px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 28px;
+        border-bottom: 2px solid white;
+        margin-bottom: 12px;
+        padding: 6px;
+        text-indent: 40px;
+
+    }
+
+    .portfolio .about p {
+        font-size: 18px;
+        padding-left: 40px;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+
+    }
+}
+
+@media(orientation: landscape) {
+
+    .web,
+    .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+
+    }
+
+    .portfolio .project:nth-of-type(even) .web {
+        float: right;
+    }
+
+    .portfolio .project:nth-of-type(even) .about {
+        padding-right: 0;
+
+
+    }
+
+    .portfolio .project:nth-of-type(even) .about p {
+        padding-right: 20px;
+
+
+    }
+
+    .portfolio .project:nth-of-type(even) .about h2 {
+        text-indent: 0;
+        margin-left: 40px;
+
+    }
+
+}
+
+
+@media(orientation: landscape) and (min-width: 1400px) {
+
+    portfolio h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+
+    .portfolio .about h2 {
+        font-size: 28px;
+        padding-top: 50px;
+        text-indent: 40px;
+        margin-bottom: 50px;
+
+    }
+
+    .portfolio .about p {
+        font-size: 18px;
+        padding-left: 40px;
+        line-height: 180%;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+
+    }
+}
+
+/*section slogan*/
+.slogan {
+    text-align: center;
+    background-image: url(motto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.slogan h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: ;
+    36px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+}
+
+.slogan p {
+    font-family: 'Saira', sans-serif;
+    font-size: 32px;
+
+}
+
+
+.slogan p.author {
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+
+.slogan .bg {
+    padding: 40px 10px;
+    background-color: rgba(0, 63, 114, 0.5);
+}
+
+@media(orientation: landscape) {
+
+    .slogan p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .slogan .bg {
+        padding: 50px 10px;
+        background-color: rgba(0, 63, 114, 0.5);
+    }
+
+    .slogan h1 {
+
+        font-size: ;
+        58px;
+        margin-bottom: 35px;
+    }
+
+    .slogan p {
+
+        font-size: 26px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
+    .slogan p.author {
+        font-size: 18px;
+        margin-top: 40px;
+
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .slogan .bg {
+        padding: 90px 10px;
+
+    }
+
+    .slogan h1 {
+
+        font-size: 70px;
+        margin-bottom: 55px;
+    }
+
+    .slogan p {
+
+        font-size: 50px;
+        width: 5 0%;
+        margin: 0 auto;
+    }
+
+
+    .slogan p.author {
+        font-size: 26px;
+        margin-top: 40px;
+    }
+}
+
+/*sekcja hobby*/
+
+.hobby {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hobby .item {
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(money.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(moda.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(skills.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(sport.jpg);
+}
+
+.hobby .item p {
+    font-family: 'Saira', sans-serif;
+    color: white;
+    text-align: center;
+    /*    line-height: 25vh;*/
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.hobby h1 {
+    padding: 20px;
+    font-family: 'Saira Condensed',
+        sans-serif;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media(min-width: 320px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+
+    .hobby .item:nth-of-type(1) {
+        background-image: url(money.jpg);
+        background-position: left bottom;
+
+    }
+
+}
+
+
+@media(min-width: 533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+
+    .hobby .item:nth-of-type(1) {
+        background-image: url(money.jpg);
+        background-position: left bottom;
+
+    }
+
+}
+
+@media(min-width: 768px) {
+    .hobby h1 {
+        font-size: 48px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+
+    .hobby .item p {
+        font-size: 30px;
+        padding: 15px 0;
+
+    }
+}
+
+@media(min-width: 1024px) {
+
+    .hobby .item p {
+        padding: 0;
+        line-height: 40vh;
+        opacity: 0;
+        transition: 1s;
+        cursor: default;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+
+    .hobby .item {
+        background-size: 100%;
+        transition: 1s;
+    }
+
+    .hobby .item:hover {
+        background-size: 120%;
+    }
+}
+
+@media(min-width: 1600px) {
+    .hobby h1 {
+        font-size: 60px;
+        margin-top: 50px;
+        margin-bottom: 45px;
+    }
+
+    .hobby .item p {
+        font-size: 40px;
+
+    }
+
+}
+
+/*sekcja contact*/
+
+.contact {
+    background-color: #49DBDA;
+    padding: 30px 20px;
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+
+.contact h1 {
+    font-family: 'Saira Condensed',
+        sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+
+}
+
+.contact .socials {
+    padding: 30px;
+    font-size: 0;
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
+
+.contact .social {
+    padding: 10px 0;
+    font-family: 'Saira condensed',
+        sans-serif;
+    color: white;
+}
+
+.contact .social a:link {
+    padding: 10px 0;
+    font-family: 'Saira condensed',
+        sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.contact .social a:visited {
+    padding: 10px 0;
+    font-family: 'Saira condensed',
+        sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.contact .social span:hover {
+
+    font-family: 'Saira condensed',
+        sans-serif;
+    color: white;
+    font-size: 30px;
+
+}
+
+
+.contact .social img {
+    float: left;
+
+}
+
+.contact .social span {
+    line-height: 72px;
+    padding-left: 20px;
+    float: left;
+    font-size: 20px;
+}
+
+@media (min-width: 533px) {
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+@media (min-width: 860px) {
+
+    .contact .socials {
+        width: 70%;
+        margin: 20px auto;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .contact .socials {
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .contact h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .contact .socials {
+        margin: 20px auto;
+        width: 70%;
+    }
+}
+
+/*Footer*/
+
+footer {
+    background-color: #000;
+    color: white;
+    font-family: 'Saira', sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size:
+}
